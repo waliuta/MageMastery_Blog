@@ -1,0 +1,50 @@
+<?php
+
+?>
+<div class="blog-container"
+    data-bind="scope: 'blog'">
+
+    <!-- ko template: getTemplate() --> <!-- /ko -->
+
+</div>    
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "blog": {
+                        "component": "MageMastery_Blog/js/blog",
+                        "title": "Hello World",
+                        "posts": [
+                            {
+                                "id": 1,
+                                "url": "http://magento245.loc/magemasteryblog/first-post",
+                                "title": "First Post",
+                                "published_date": "2023-02-01",
+                                "content": "Lorem ipsum dolor sit amet",
+                                "author": "Max Pronko"
+                            },
+                            {
+                                "id": 2,
+                                "url": "http://magento245.loc/magemasteryblog/second-post",
+                                "title": "Second Post",
+                                "published_date": "2022-10-11",
+                                "content": "Lorem ipsum dolor sit amet",
+                                "author": "Max Pronko"
+                            },
+                            {
+                                "id": 3,
+                                "url": "http://magento245.loc/magemasteryblog/third-post",
+                                "title": "Third Post",
+                                "published_date": "2022-05-21",
+                                "content": "Lorem ipsum dolor sit amet",
+                                "author": "Max Pronko"
+                            }
+                            ]
+                    }
+                }
+            }
+        }
+    }
+    </script>
